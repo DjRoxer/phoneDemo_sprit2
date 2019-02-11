@@ -1,0 +1,27 @@
+/* make all buttons 20 by 20 pixels with white text and green background and a 10 pixel margin */
+button.Num {   height: 40px; width: 60px; background: lightgray; color: black;  border: none; margin: 3px;
+	border-radius: 4px;
+}
+#Tab {
+	border: none; background: darkgray; padding: 3px; padding-bottom: 0px;
+}
+button.Tab{ border-radius: 2px; border: none; 
+
+}
+button.contactname{
+	border-radius: 2px; margin: 2px;
+}
+#buffalo {
+	max-width: 50px; max-height: 50px; right: ;
+div {
+	max-width: 275px;
+}
+html{
+	object-fit: cover;
+}
+
+/* make all tags with the "cool" class name have blue text */
+.cool { color: blue; }
+
+/* make the button with ID "delete" red */
+#delete { background: red; }

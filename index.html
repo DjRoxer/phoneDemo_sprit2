@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Phone Demo</title>
+	<link rel="stylesheet" href="phone.css">
+</head>
+
+
+<body>
+	<div id= "Tab" role="navigation"	>
+		<button class="Tab" id= "dialer" accesskey="a"> Dialer</button>
+		<button class="Tab" id= "contact" accesskey="s"> Contact List</button>
+		<button class="Tab" id= "add" accesskey="z"> Add Contact</button>
+	</div>
+<!--
+	<div>
+		<form>
+			<label for="name">Name</label>
+			<input id="name" placeholder="Jane Smith">
+		</form>
+	</div>
+-->
+
+
+
+	<div id ="numbers" role="main">
+		<h1>Dialer</h1> 
+		<img src="buffalo.jpg" alt="CU Buffalo Logo" id="buffalo">
+		<form>
+			<input id="number_input">
+		</form>
+		<div id ="dialer_pad">
+		<div role="list numbers">
+			<button role = " number " class="Num" id= "1"> 1</button>
+			<button role = " number " class="Num" id= "2"> 2</button>
+			<button role = " number " class="Num" id= "3"> 3</button>
+		</div>
+		<div role="list numbers">
+			<button role = " number " class="Num" id= "4"> 4</button>
+			<button role = " number " class="Num" id= "5"> 5</button>
+			<button role = " number " class="Num" id= "6"> 6</button>
+		</div>
+		<div role="list numbers">
+			<button role = " number " class="Num" id= "7"> 7</button>
+			<button role = " number " class="Num" id= "8"> 8</button>
+			<button role = " number " class="Num" id= "9"> 9</button>
+		</div>
+		<div>
+			<button role = " number " class="Num" id= "star">*</button>
+			<button role = " number " class="Num" id= "0">0</button>
+			<button role = " number " class="Num" id= "hashtag">#</button>
+		</div>
+		</div>
+	</div>
+
+
+	<div id="contacts" role="main">
+		<h1>Contacts</h1>
+		<table>
+		<tr><th>Contact's Names</th></tr>
+
+			<tr><td><button class="contactname" role="contactname">Robert Drake</button></td></tr>
+			<tr><td><button class="contactname" role="contactname">Elizabeth Elliott</button></td></tr>
+			<tr><td><button class="contactname" role="contactname">Bobby Ross</button></td></tr>
+			<tr><td><button class="contactname" role="contactname">Gage Froelich</button></td></tr>
+			<tr><td><button class="contactname" role="contactname">Phill vo</button></td></tr>
+	</table>
+
+		
+	</div>
+
+	<div id=addScreen role="main">
+		<h1>Add New Contact</h1>
+		<form>
+			<div>
+				<label for= "name">Name</label>
+				<input id="name" placeholder="Dillon Elliott">
+			</div>
+			<div>
+				<label for= "phone_num">Phone Number</label>
+				<input id="phone_num" placeholder="112-358-1321">
+			</div>
+			<button>Add Contact</button>
+			<button>clear</button>
+		</form>
+
+	</div>
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="phone.js"></script>
+</body>
+
+
+
+</html>
