@@ -5,6 +5,8 @@ $(document).ready(function() { // do this when the document is loaded
 	$("#contact").show();
 	$("#contacts").hide(); // hide the element with ID "otherElement"
 	$("#addScreen").hide();
+	$("#help").hide();
+
 });
 $("#dialer").click(function() {
 
@@ -14,6 +16,7 @@ $("#dialer").click(function() {
 	$(this).css('backgroundColor', 'white');
 	$('#contact').css('backgroundColor', 'lightgrey');
 	$('#add').css('backgroundColor', 'lightgrey');
+	$("#help").hide();
 });
 $("#contact").click(function() {
 
@@ -23,6 +26,7 @@ $("#contact").click(function() {
 	$(this).css('backgroundColor', 'white');
 	$('#dialer').css('backgroundColor', 'lightgrey');
 	$('#add').css('backgroundColor', 'lightgrey');
+	$("#help").hide();
 });
 $("#add").click(function() {
 
@@ -32,7 +36,20 @@ $("#add").click(function() {
 	$(this).css('backgroundColor', 'white');
 	$('#contact').css('backgroundColor', 'lightgrey');
 	$('#dialer').css('backgroundColor', 'lightgrey');
+	$("#help").hide();
 });
+$("#Help").click(function() {
+
+	$("#help").show();
+	$("#addScreen").hide();
+	$("#numbers").hide();
+	$("#contacts").hide();
+	$(this).css('backgroundColor', 'white');
+	$('#contact').css('backgroundColor', 'lightgrey');
+	$('#dialer').css('backgroundColor', 'lightgrey');
+	
+});
+
 
 /* fancy dialing functions */
 $("#dialer_pad button").click(function() {
